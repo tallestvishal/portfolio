@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #3498db;
+      color: white;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .header-content {
+      margin-left: 3%;
+      margin-right: 5%;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+      margin-right: 3%;
+    }
+
+    h1,
+    h2 {
+      font-weight: 600;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .header-text {
+      text-align: left;
+    }
+
+    .contact-details {
+      margin-top: 10px;
+    }
+
+    .social-media a {
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+      font-weight: 500;
+    }
+
+    .social-media a:hover {
+      text-decoration: underline;
+    }
+
+    #profile p,
+    #experience p,
+    #education p,
+    #projects p,
+    #hobbies p,
+    #certifications ul,
+    footer p {
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #3498db;
+      font-size: 1.8em;
+    }
+
+    hr {
+      border-top: 1px solid #3498db;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      background-color: #f9f9f9;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="container header-content">
+        <div class="header-text">
+          <h1>Vishal Hibare</h1>
+          <p>MITVPU | Student</p>
+          <div class="contact-details">
+            <p>Email: vishalhibare6.3@gmail.com</p>
+            <p>Mobile: +91 9356242490</p>
+            <div class="social-media">
+              <a
+                href="https://www.linkedin.com/in/siddaram-badiger-740378ba"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a href="https://x.com/SiddaramBadiger" target="_blank">X</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="luffy.jpg" alt="Photo of Vishal Hibare" class="profile-photo" />
+    </header>
+    <section id="profile">
+      <div class="container">
+        <h2>Profile Summary</h2>
+        <p>
+          A highly motivated and enthusiastic recent graduate with a strong
+          academic background in MCA. Equipped with a solid foundation in
+          [mention relevant skills or areas of expertise, e.g., software
+          development, data analysis, marketing, etc.], along with a passion for
+          learning and growing in a dynamic work environment. Adept at applying
+          theoretical knowledge to practical situations, with strong analytical
+          and problem-solving skills. Demonstrated ability to work effectively
+          in team settings, manage multiple tasks, and communicate ideas
+          clearly. Eager to contribute to a forward-thinking organization while
+          developing professional skills and gaining hands-on experience in
+          [specific industry or role you're aiming for].
+        </p>
+      </div>
+    </section>
+    <hr />
+    <section id="technical-skills">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript, Bootstrap</li>
+          <li>React, Node.js, Express.js,MongoDB</li>
+          <li>Git, GitHub</li>
+          <li>Responsive Web Design</li>
+          <li>API Integration</li>
+        </ul>
+      </div>
+    </section>
+    <hr />
+    <section id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="experience-item">
+          <h3>Frontend Developer at XYZ Corp</h3>
+          <p>Jan 2023 - Present</p>
+          <p>
+            Worked on building responsive user interfaces for client websites
+            and applications using modern web technologies such as HTML, CSS,
+            and JavaScript.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Intern at ABC Tech</h3>
+          <p>June 2022 - Dec 2022</p>
+          <p>
+            Collaborated with a team to develop dynamic websites and handled
+            frontend and backend integration.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>University</th>
+              <th>Year</th>
+              <th>Percentage/CGPA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Masters in Computer Aoolication</td>
+              <td>MIT Solapur</td>
+              <td>2024 - 2025</td>
+              <td>8.47</td>
+            </tr>
+            <tr>
+              <td>Bachelor of Computer Applications</td>
+              <td>Sangmeshwar College, Solapur</td>
+              <td>2023 - 2024</td>
+              <td>8.83</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <hr />
+    <section id="projects">
+      <div class="container">
+        <h2>Personal Projects</h2>
+        <div class="project-item">
+          <h3>Portfolio Website</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            iure ipsum blanditiis, mollitia iusto nisi culpa omnis, voluptatibus
+            error facere eius sunt in incidunt nobis ratione a est, aut non?
+          </p>
+        </div>
+        <div class="project-item">
+          <h3>Ecommerce Website</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore
+            iure, dolores nihil blanditiis corporis qui maxime natus architecto
+            perferendis! Velit dolor consequuntur necessitatibus repudiandae,
+            aperiam atque enim accusantium pariatur.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section id="certifications">
+      <div class="container">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Certified JavaScript Developer</li>
+          <li>React Developer Nanodegree</li>
+          <li>Responsive Web Design Certification</li>
+        </ul>
+      </div>
+    </section>
+    <section id="hobbies">
+      <div class="container">
+        <h2>Hobbies</h2>
+        <p>Coding, traveling, watching movies, reading</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Vishal Hibare. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
